@@ -1,12 +1,12 @@
 
 describe Event do
-  subject(:event) {described_class.new()}
+  subject(:event) { described_class.new }
 
   it 'creates a new event' do
     expect(event).to be_truthy
   end
 
-  it 'has a @location' do
+  it 'has @location' do
     expect(event).to respond_to :location
   end
 
