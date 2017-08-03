@@ -6,6 +6,7 @@ Viagogo Coding Challenge
 #### TDD the building of these key features:
 - A World object: which is 10 by 10 squares
 - Events: which have an @location represented by coordinates of 1-10 by 1-10
+- The World has @events stored in an array
 - The World only accepts Events with a location within the limits of it's 10 by 10 area.
 - Events: have a @tickets variable
 - An Event's @tickets variable can have 0 or more tickets
@@ -25,4 +26,4 @@ Viagogo Coding Challenge
 ## To Run
 
 - clone repository
-- run bundler 
+- run bundler
