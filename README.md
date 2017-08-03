@@ -19,4 +19,10 @@ Viagogo Coding Challenge
 - Interface will request/accept a user location (as coordinates)
 - The interface will use the distance Calculator to know the 5 closest events
 - The interface will print the Five closest Events in order from closest to furthest && the price of the cheapest ticket for each event: when provided with a user location.
-- For the purpose of this exercise: Events and tickets must be randomly generated when a world is generated. 
+- For the purpose of this exercise: Events and tickets must be randomly generated when a world is generated.
+
+
+## To Run
+
+- clone repository
+- run bundler 
