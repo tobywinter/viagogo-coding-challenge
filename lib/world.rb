@@ -2,7 +2,7 @@ class World
 
   attr_reader :events
 
-  def initialize(events = [Event.new])
+  def initialize(*events)
     @events = events
   end
 

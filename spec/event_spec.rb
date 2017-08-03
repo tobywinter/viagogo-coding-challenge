@@ -15,4 +15,8 @@ describe Event do
     expect(event.location[1]).to be_between(1, 10)
   end
 
+  it 'has @tickets' do
+    expect(event).to respond_to :tickets
+  end
+
 end
