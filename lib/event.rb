@@ -2,15 +2,14 @@ class Event
 
   attr_reader :location, :tickets
 
-  RANDOM_LOCATION = [rand(1...10), rand(1...10)]
 
-  def initialize(location = RANDOM_LOCATION)
-    @location = location
+  def initialize(seed_generator = SeedGenerator.new)
+    @location = seed_generator.location
     @tickets = []
   end
 
   def add_ticket(ticket = Ticket.new)
-    @tickets << ticket 
+    @tickets << ticket
   end
 
 end
