@@ -13,6 +13,7 @@ Viagogo Coding Challenge
 - An Event's @tickets variable can have 0 or more tickets
 - Tickets have a @price which is anything greater than 0 USD
 - An Event will understand what the cheapest ticket price available for it is.
+- Events can be added to the World 
 - The World will only allow 1 event per location, so location coordinates must be unique
 - A Distance Calculator will understand the distance between a user location and each event
 - The Distance Calculator will understand Manhattan Distance to calculate this distance
