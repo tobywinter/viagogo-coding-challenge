@@ -5,6 +5,7 @@ require 'world'
 require 'event'
 require 'ticket'
 require 'seed_generator'
+require 'distance_calculator'
 
 
 RSpec.configure do |config|
