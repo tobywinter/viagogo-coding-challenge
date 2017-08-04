@@ -18,8 +18,8 @@ Viagogo Coding Challenge
 - A Distance Calculator can calculate the distance between two points
 - A Distance Calculator will understand the distance between a user location and each event
 - The Distance Calculator will understand Manhattan Distance to calculate this distance
-- Distance Calculator will understand which events are the closest, from closest to furthest
 - If event x=(a,b) && event y=(c,d) then Manhattan distance is (a-c) + (b-d)
+- The World will understand which events are the closest, from closest to furthest
 - Interface will request/accept a user location (as coordinates)
 - The interface will use the distance Calculator to know the 5 closest events
 - The interface will print the Five closest Events in order from closest to furthest && the price of the cheapest ticket for each event: when provided with a user location.
