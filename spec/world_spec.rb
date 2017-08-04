@@ -23,8 +23,10 @@ describe World do
     expect(world.events[0]).to eq event_1
   end
 
-  # it 'only allows one event in each location' do
-  #
-  # end
+  it 'only allows one event in each location' do
+    world.add_event(event_1)
+    world.add_event(event_2)
+    expect(world.events.count).to eq 1
+  end
 
 end
