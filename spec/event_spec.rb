@@ -20,7 +20,15 @@ describe Event do
   end
 
   it 'can have 0 tickets' do
-    expect(event.tickets).to eq []
+    expect(event.tickets.count).to eq 0
+  end
+
+  it 'can have multiple tickets' do
+    3.times { event.add_ticket }
+    expect(event.tickets.count).to be > 1
+  end
+
+  it 'knows the price of tickets' do
   end
 
 end

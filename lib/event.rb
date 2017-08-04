@@ -9,4 +9,8 @@ class Event
     @tickets = []
   end
 
+  def add_ticket(ticket = Ticket.new)
+    @tickets << ticket 
+  end
+
 end

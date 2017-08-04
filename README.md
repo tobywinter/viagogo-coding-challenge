@@ -11,8 +11,8 @@ Viagogo Coding Challenge
 - Events: have a @tickets variable
 - Tickets can be stored in an Events @tickets variable  
 - An Event's @tickets variable can have 0 or more tickets
-- Ticket have a @price which is anything greater than 0 USD
-- An Event will understand what the cheapest ticket price available for it.
+- Tickets have a @price which is anything greater than 0 USD
+- An Event will understand what the cheapest ticket price available for it is.
 - The World will only allow 1 event per location, so location coordinates must be unique
 - A Distance Calculator will understand the distance between a user location and each event
 - The Distance Calculator will understand Manhattan Distance to calculate this distance

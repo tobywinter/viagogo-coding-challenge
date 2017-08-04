@@ -4,6 +4,7 @@ require 'simplecov-console'
 require 'world'
 require 'event'
 require 'ticket'
+require 'seed_generator'
 
 
 RSpec.configure do |config|
