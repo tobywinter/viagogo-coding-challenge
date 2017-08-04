@@ -9,6 +9,7 @@ Viagogo Coding Challenge
 - The World has @events stored in an array
 - The World only accepts Events with a location within the limits of it's 10 by 10 area.
 - Events: have a @tickets variable
+- Tickets can be stored in an Events @tickets variable  
 - An Event's @tickets variable can have 0 or more tickets
 - Ticket have a @price which is anything greater than 0 USD
 - An Event will understand what the cheapest ticket price available for it.

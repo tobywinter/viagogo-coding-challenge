@@ -3,6 +3,7 @@ require 'simplecov-console'
 
 require 'world'
 require 'event'
+require 'ticket'
 
 
 RSpec.configure do |config|

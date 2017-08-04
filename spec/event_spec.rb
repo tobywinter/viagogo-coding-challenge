@@ -11,6 +11,7 @@ describe Event do
   end
 
   it '@location is a random coordinate of 1-10 && 1-10 by default' do
+    p event.tickets
     expect(event.location[0]).to be_between(1, 10)
     expect(event.location[1]).to be_between(1, 10)
   end
