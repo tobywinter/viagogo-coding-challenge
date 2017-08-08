@@ -75,12 +75,12 @@ interface = Interface.new
  - You will see the generated world & events data. Then you can interact with the world using any method to explore how it works:
 
 
-Interface methods
+**Interface methods**
 ```
   find_closest_events
   request_location
 ```
-World methods
+**World methods**
 ```
   events
   add_event
@@ -91,7 +91,7 @@ World methods
   closest_distances_and_events_to(my_location)
   top_five_closest_events(my_location)
 ```
-Event methods
+**Event methods**
 ```
   name
   location
@@ -101,11 +101,11 @@ Event methods
   cheapest_ticket
   cheapest_ticket_price
 ```
-Ticket methods
+**Ticket methods**
 ```
   price
 ```
-DistanceCalculator methods
+**DistanceCalculator methods**
 ```
   between(point_a, point_b)
   to_locations(my_location, other_locations)
