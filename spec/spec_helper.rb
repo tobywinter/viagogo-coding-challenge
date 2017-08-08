@@ -6,6 +6,7 @@ require 'event'
 require 'ticket'
 require 'seed_generator'
 require 'distance_calculator'
+require 'interface'
 
 
 RSpec.configure do |config|

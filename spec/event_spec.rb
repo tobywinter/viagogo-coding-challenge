@@ -27,19 +27,32 @@ describe Event do
     expect(event).to respond_to :tickets
   end
 
-  it 'can have 0 tickets' do
-    expect(event.tickets.count).to eq 0
+  it 'can clear tickets' do
+    event.clear_tickets
+    expect(event.tickets).to eq []
   end
 
-  it 'can have multiple tickets' do
-    3.times { event.add_ticket }
-    expect(event.tickets.count).to be > 1
-  end
+  context 'managing tickets' do
 
-  it 'knows the cheapest ticket available' do
-    event.add_ticket(ticket_2)
-    event.add_ticket(ticket_1)
-    expect(event.cheapest_ticket).to eq ticket_1
+    before :each do
+      event.clear_tickets
+    end
+
+    it 'can have 0 tickets' do
+      expect(event.tickets.count).to eq 0
+    end
+
+    it 'can have multiple tickets' do
+      3.times { event.add_ticket }
+      expect(event.tickets.count).to be > 1
+    end
+
+    it 'knows the cheapest ticket available' do
+      event.add_ticket(ticket_2)
+      event.add_ticket(ticket_1)
+      expect(event.cheapest_ticket).to eq ticket_1
+    end
+
   end
 
 end

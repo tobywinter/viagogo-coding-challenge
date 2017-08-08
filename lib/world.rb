@@ -2,8 +2,11 @@ class World
 
   attr_reader :events
 
+
+
   def initialize(*events)
     @events = events
+    15.times { seed_event }
   end
 
   def add_event(event)
@@ -14,6 +17,14 @@ class World
 
   def add_events(events)
     events.each { |event| add_event(event)}
+  end
+
+  def clear_events
+    @events = []
+  end
+
+  def seed_event(seed_event = Event.new)
+    add_event(seed_event)
   end
 
   def event_location_not_unique?(event)
