@@ -74,14 +74,14 @@ interface = Interface.new
 ```
  - You will see the generated world & events data. Then you can interact with the world using any method to explore how it works:
 
-```
-Interface methods
 
+Interface methods
+```
   find_closest_events
   request_location
-
+```
 World methods
-
+```
   events
   add_event
   add_events
@@ -90,9 +90,9 @@ World methods
   event_locations
   closest_distances_and_events_to(my_location)
   top_five_closest_events(my_location)
-
+```
 Event methods
-
+```
   name
   location
   tickets
@@ -100,13 +100,13 @@ Event methods
   add_ticket(ticket)
   cheapest_ticket
   cheapest_ticket_price
-
+```
 Ticket methods
-
+```
   price
-
+```
 DistanceCalculator methods
-
+```
   between(point_a, point_b)
   to_locations(my_location, other_locations)
 
@@ -126,4 +126,4 @@ DistanceCalculator methods
 Given time to develop:
 - I would build a front-end one page display.
 - To support multiple events at the same location I would create a Venue class, Venue objects would have a @maximum_number_of_events which could be set upon initialisation but default as 1.
-- To increase the size of the world one would just need to allow the coordinates to be greater than 10. 
+- To increase the size of the world one would just need to allow the coordinates to be greater than 10.
