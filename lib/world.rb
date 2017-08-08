@@ -25,10 +25,6 @@ class World
     add_event(seed_event)
   end
 
-  def event_location_not_unique?(event)
-    event_locations.include?(event.location)
-  end
-
   def event_locations
     event_locations = @events.map { |event| event.location }
   end
@@ -41,5 +37,11 @@ class World
   def top_five_closest_events(my_location)
     closest_distances_and_events_to(my_location)[0...5]
   end
+
+  private
+
+    def event_location_not_unique?(event)
+      event_locations.include?(event.location)
+    end
 
 end

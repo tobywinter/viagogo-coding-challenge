@@ -8,6 +8,4 @@ require './lib/world'
 
 interface = Interface.new
 
-interface.request_location
-
-interface.display_closest_event_information
+interface.find_closest_events

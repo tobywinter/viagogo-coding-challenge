@@ -23,7 +23,7 @@ class Event
 
   def cheapest_ticket_price
     if event_has_tickets?
-      "$#{cheapest_ticket.price/100}"
+      "$#{cheapest_ticket.price.to_f/100}"
     else
       "There are no tickets available for this event"
     end
