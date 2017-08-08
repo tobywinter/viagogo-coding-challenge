@@ -2,8 +2,6 @@ class World
 
   attr_reader :events
 
-
-
   def initialize(*events)
     @events = events
     15.times { seed_event }
@@ -38,6 +36,10 @@ class World
   def closest_distances_and_events_to(my_location, distance_calculator = DistanceCalculator.new)
     distances = distance_calculator.to_locations(my_location, event_locations)
     Hash[distances.zip(@events)].sort
+  end
+
+  def top_five_closest_events(my_location)
+    closest_distances_and_events_to(my_location)[0...5]
   end
 
 end

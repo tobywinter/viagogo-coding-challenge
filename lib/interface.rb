@@ -18,8 +18,8 @@ class Interface
   end
 
   def display_closest_event_information
-    # p @world.closest_distances_and_events_to(@my_location)
-    puts "Event 003 - $30.29, Distance 3\n Event 001 - $35.20, Distance 5\n Event 006 - $01.40, Distance 12\n Event 006 - $01.40, Distance 12\n Event 006 - $01.40, Distance 12\n"
+    closest_events = @world.top_five_closest_events(@my_location)
+    closest_events.each { |event| puts "#{event[1].name} - #{event[1].cheapest_ticket_price}, Distance #{event[0]}" }
   end
 
 end
